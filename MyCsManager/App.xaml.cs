@@ -11,8 +11,8 @@ using System.Windows;
 using System.Windows.Media;
 
 using FirstFloor.ModernUI.Presentation;
-
-using MANAGER.Properties;
+using static System.Windows.Media.ColorConverter;
+using static MANAGER.Properties.Settings;
 
 #endregion
 
@@ -26,13 +26,9 @@ namespace MANAGER
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            AppearanceManager.Current.AccentColor = (Color) ColorConverter.ConvertFromString(Settings.Default.AccentColor);
-            AppearanceManager.Current.FontSize = Settings.Default.FontSize == "Large" ? FontSize.Large : FontSize.Small;
-            AppearanceManager.Current.ThemeSource = new Uri(Settings.Default.Theme, UriKind.Relative);
-            Connection.Connection.Database = MANAGER.Properties.Connection.Default.Database;
-            //xml.getLang();
-            //Transharp.SetCurrentLanguage(xml.getLang());
-            //var x = MANAGER.Properties.Resources.SettingsData;
+            AppearanceManager.Current.AccentColor = (Color) ConvertFromString(Default.AccentColor);
+            AppearanceManager.Current.FontSize = Default.FontSize == "Large" ? FontSize.Large : FontSize.Small;
+            AppearanceManager.Current.ThemeSource = new Uri(Default.Theme, UriKind.Relative);
         }
     }
 }

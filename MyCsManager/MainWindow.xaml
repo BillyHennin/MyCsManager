@@ -6,10 +6,9 @@
                   MinWidth="1000"
                   MinHeight="600"
                   ContentSource="/Pages/about.xaml"
-                  Icon="Asset/appbar.currency.euro.png"
+                  Icon="Resources/Images/icon.png"
                   Initialized="                                                                                                                                                                                                                                                                                                                                                                                                       ModernWindow_Initialized"
                   IsTitleVisible="True"
-                  Loaded="ModernWindow_Loaded"
                   ToolTip="{DynamicResource {x:Type ToolTip}}"
                   WindowState="Maximized">
 

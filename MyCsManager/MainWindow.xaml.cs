@@ -26,20 +26,5 @@ namespace MANAGER
             //Connection string
             Properties.Connection.Default.DatabaseConnectionString = "user id=SLAM3;password=pw;data source=localhost:1521/xe";
         }
-
-        private void ModernWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            //Load every traduction for links
-            Link_About.DisplayName = Transharp.GetTranslation("Link_About");
-            Link_Apparence.DisplayName = Transharp.GetTranslation("Link_Apparence");
-            Link_Param.DisplayName = Transharp.GetTranslation("Link_Param");
-            Link_CE.DisplayName = Transharp.GetTranslation("Link_CE");
-            Link_CreateCE.DisplayName = Transharp.GetTranslation("Link_CreateCE");
-            Link_Customer.DisplayName = Transharp.GetTranslation("Link_Customer");
-            Link_DisplayCustomer.DisplayName = Transharp.GetTranslation("Link_DisplayCustomer");
-            Link_CreateCustomer.DisplayName = Transharp.GetTranslation("Link_CreateCustomer");
-            Link_Merchandise.DisplayName = Transharp.GetTranslation("Link_Merchandise");
-            Link_DisplayMerchandise.DisplayName = Transharp.GetTranslation("Link_DisplayMerchandise");
-        }
     }
 }
