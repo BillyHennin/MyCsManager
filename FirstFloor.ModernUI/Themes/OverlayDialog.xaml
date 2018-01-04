@@ -1,0 +1,80 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:FirstFloor.ModernUI.Windows.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/Button.xaml" />
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/Converters.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="controls:OverlayDialog">
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
+        <Setter Property="FontSize" Value="{DynamicResource DefaultFontSize}" />
+        <Setter Property="Foreground" Value="{DynamicResource WindowText}" />
+        <Setter Property="MaxWidth" Value="640" />
+        <Setter Property="MaxHeight" Value="640" />
+        <Setter Property="MinWidth" Value="240" />
+        <Setter Property="MinHeight" Value="240" />
+        <Setter Property="UseLayoutRounding" Value="True" />
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:OverlayDialog">
+                    <Grid DataContext="">
+                        <Border Background="#90000000" Visibility="{TemplateBinding Visibility}">
+
+                            <Grid>
+
+                                <!--
+                                <Canvas>
+                                    <Rectangle Canvas.Left="24"
+                                               Canvas.Top="18"
+                                               Width="100"
+                                               Height="6"
+                                               Fill="{DynamicResource Accent}" />
+                                </Canvas>
+
+                                <Grid Margin="24">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                       
+                                    <TextBlock DataContext="{TemplateBinding Title}"
+                                               FontFamily="Segoe UI"
+                                               FontSize="24"
+                                               Text="{Binding Converter={StaticResource ToUpperConverter}}"
+                                               TextOptions.TextFormattingMode="Ideal"
+                                               TextTrimming="CharacterEllipsis" />
+
+                           
+                                    <controls:TransitioningContentControl Grid.Row="1" Margin="0,20">
+                                        <controls:TransitioningContentControl.Content>
+                                            <controls:BBCodeBlock Margin="0, 0, 0, 8" BBCode="{TemplateBinding Content}" />
+                                        </controls:TransitioningContentControl.Content>
+                                    </controls:TransitioningContentControl>
+
+                               
+                                    <ItemsControl Grid.Row="2"
+                                                  HorizontalAlignment="Right"
+                                                  ItemsSource="{TemplateBinding Buttons}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Horizontal" />
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                    </ItemsControl>
+
+                                </Grid>   -->
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

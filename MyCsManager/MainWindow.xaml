@@ -1,0 +1,56 @@
+﻿<mui:ModernWindow x:Class="MANAGER.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="Manager"
+                  MinWidth="1000"
+                  MinHeight="600"
+                  ContentSource="/Pages/about.xaml"
+                  Icon="Asset/appbar.currency.euro.png"
+                  Initialized="                                                                                                                                                                                                                                                                                                                                                                                                       ModernWindow_Initialized"
+                  IsTitleVisible="True"
+                  Loaded="ModernWindow_Loaded"
+                  ToolTip="{DynamicResource {x:Type ToolTip}}"
+                  WindowState="Maximized">
+
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link x:Name="Link_About"
+                  DisplayName="#Link_About"
+                  Source="/Pages/About.xaml" />
+        <mui:Link x:Name="Link_Apparence"
+                  DisplayName="#Link_Apparence"
+                  Source="Pages/Appearance.xaml" />
+        <mui:Link x:Name="Link_Param"
+                  DisplayName="#Link_Param"
+                  Source="Pages/Parametre.xaml" />
+    </mui:ModernWindow.TitleLinks>
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup x:Name="Link_CE" DisplayName="#Link_CE">
+            <mui:LinkGroup.Links>
+                <mui:Link x:Name="Link_CreateCE"
+                          DisplayName="#Link_CreateCE"
+                          Source="/Pages/EstimateCreator.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+
+        <mui:LinkGroup x:Name="Link_Customer" DisplayName="#Link_Customer">
+            <mui:LinkGroup.Links>
+                <mui:Link x:Name="Link_DisplayCustomer"
+                          DisplayName="#Link_DisplayCustomer"
+                          Source="/Pages/DisplayCustomer.xaml" />
+                <mui:Link x:Name="Link_CreateCustomer"
+                          DisplayName="#Link_CreateCustomer"
+                          Source="/Pages/AddCustomer.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup x:Name="Link_Merchandise" DisplayName="#Link_Merchandise">
+            <mui:LinkGroup.Links>
+                <mui:Link x:Name="Link_DisplayMerchandise"
+                          DisplayName="#Link_DisplayMerchandise"
+                          Source="/Pages/DisplayMerchandise.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+</mui:ModernWindow>

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstFloor.ModernUI", "FirstFloor.ModernUI\FirstFloor.ModernUI.csproj", "{9A653A28-FE46-40E8-A14F-48B0E325165D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCsManager", "MyCsManager\MyCsManager.csproj", "{32909AC3-4CBB-413C-8C3F-56723566AC11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A653A28-FE46-40E8-A14F-48B0E325165D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32909AC3-4CBB-413C-8C3F-56723566AC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32909AC3-4CBB-413C-8C3F-56723566AC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32909AC3-4CBB-413C-8C3F-56723566AC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32909AC3-4CBB-413C-8C3F-56723566AC11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

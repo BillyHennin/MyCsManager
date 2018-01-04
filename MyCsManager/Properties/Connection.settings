@@ -1,0 +1,23 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"
+              GeneratedClassNamespace="MANAGER.Properties" GeneratedClassName="Connection">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SLAM3</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pw</Value>
+    </Setting>
+    <Setting Name="DatabaseConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">user id=SLAM3;password=pw;data source=localhost:1521/xe</Value>
+    </Setting>
+    <Setting Name="Datasource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost:1521/xe</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Oracle</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
